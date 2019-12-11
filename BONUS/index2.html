@@ -1,0 +1,164 @@
+<!--
+_______________________________________________________________________________________________________________________    
+BONUS CODING
+
+DATA EXCERPTED  FROM Matplotlib Homework
+
+PYMACEUTICALS
+
+_______________________________________________________________________________________________________________________
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BONUS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAV BAR CONTENT -->
+
+    <div class="bar_navigate"></div>
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="index2.html">PYMACEUTICAL ANALYSIS</a>
+    </nav>
+    </div>
+    <div class="container">
+    </div>
+
+    <!-- CONTAINER DEFINITION -->
+    <div class="container">
+        <section class="row">
+            <div class="col-lg-8 col-md-20">
+                <div class="description-content">
+                    <h1 class="description-header">PYMACEUTICALS ANALYSIS</h1>
+                    <hr>
+                    <img src="Laboratory.jpg" alt="Laboratory" class="description-image">
+
+                    <p> While your data companions rushed off to jobs in finance and government, you remained adamant that science was the way for you.
+                        <br> Staying true to your mission, you've since joined Pymaceuticals Inc., a burgeoning pharmaceutical company based out of San Diego, CA. Pymaceuticals specializes in drug-based, anti-cancer pharmaceuticals.
+                        <br> In their most recent efforts, they have since begun screening for potential treatments to squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
+                        <br> As their Chief Data Analyst, you've been given access to the complete data from their most recent animal study.
+                        <br> In this study, 250 mice were treated through a variety of drug regimes over the course of 45 days.
+                        <br> Their physiological responses were then monitored over the course of that time. Your objective is to analyze the data to show how four treatments (Capomulin, Infubinol, Ketapril, and Placebo) compare.</p>
+                    <hr>
+                    <p> All the Samples were taken from Pymaceuticals Homework</p>
+                    <hr>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- COLLAPSIBLE MENU FOR PLOTTINGS AND DESCRIPTIONS-->
+
+    <div class="accordion " id="accordionExample ">
+        <div class="card ">
+            <div class="card-header " id="headingOne ">
+                <h2 class="mb-0 ">
+                    <button class="btn btn-link " type="button " data-toggle="collapse " data-target="#collapseOne " aria-expanded="true " aria-controls="ID1 ">
+                    Analysis 1.-Tumor Volume vs. Days
+                  </button>
+                </h2>
+            </div>
+
+            <div id="ID1 " class="collapse show " aria-labelledby="ID1 " data-parent="#accordionExample ">
+                <div class="card-body ">
+                    <ul>
+                        <li>Chemical facts, composition, Cost of the Treament.</li>
+                        <li> Dosis per day and the nature of treatment, that is to say: How is prescribed and implemented</li>
+                        <li>Looking into the first half days(20-25) the percentage difference against the other Treatments is just 12 to 15 point. However at the end is more than 30 points.</li>
+                        <br>
+                    </ul>
+                    <div class="alert alert-info " role="alert ">
+                        Recommendation:I would increase the Time Points of ovservation for these two Drugs after the first Half to keep monitored over a daily basis.
+                    </div>
+                    <img src="SEM_PLOT1.png " alt="DaysCancer1 " class="description-image ">
+                </div>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header " id="headingTwo ">
+                <h2 class="mb-0 ">
+                    <button class="btn btn-link collapsed " type="button " data-toggle="collapse " data-target="#collapseTwo " aria-expanded="false " aria-controls="ID2 ">
+                    Analysis 2.-  Metastatic Progress Vs Days by Treatment
+                  </button>
+                </h2>
+            </div>
+            <div id="ID2 " class="collapse " aria-labelledby="ID2 " data-parent="#accordionExample ">
+                <div class="card-body ">
+                    <ul>
+                        <li>Get more information about Placebo and ketapril, why are they losing battle? What are the circumstances for their worst performance? What are their costs and chemical composition? Are they properly implemented?</li>
+                        <li>Ifubinol and Stelasyn, have an average linear progression. That is to say they can be considered as a basis for analysis against the least and the best effective. Benchmarking these two Drugs. </li>
+                        <li> Ramicane composition, costs and prescribe methods should be analyzed into deeper.</li>
+                    </ul>
+                    <div class="alert alert-info " role="alert ">
+                        Recommendation: Placebo and Ketapril Prescriptions are the least effective throughout the time. I would consider to discard such Treatments in the short run.
+                    </div>
+                    <img src="METASTATIC_PLOT.png " alt="MetasCancer " class="description-image ">
+                </div>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header " id="headingThree ">
+                <h2 class="mb-0 ">
+                    <button class="btn btn-link collapsed " type="button " data-toggle="collapse " data-target="#collapseThree " aria-expanded="false " aria-controls="ID3 ">
+                    Analysis 3.- Survival Rate 
+                  </button>
+                </h2>
+            </div>
+            <div id="ID3 " class="collapse " aria-labelledby="ID3 " data-parent="#accordionExample ">
+                <div class="card-body ">
+                    <ul>
+                        <li>Clear and objective are not a solution for healthier recoveries. I would discard them for future analysis.</li>
+                        <li> The first 15 days of treatment Placebo and Stelasyn seem to be with positive response, however at the end after another 15 days(day 30) their results drop consistently. What is happening? Why is such response to Treatment?</li>
+                        <li>The first 20 dyas Zoniferol, Ceftamin and Naftisol have a disappointing response. However after 35 days at the end of the observation, they remain almost equal without dropping further.</li>
+                        <li>Discard Propiba and Infunibol</li>
+                        <div class="alert alert-info " role="alert ">
+                            Recommendation: I would increase Time Points of observations for these Drugs on a daily basis and analyze into deeper what is apparently showing a little recovery for the mice?
+                        </div>
+                        <img src="SURVIVAL_PLOT.png " alt="SurvCancer " class="description-image ">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header " id="ID4 ">
+                <h2 class="mb-0 ">
+                    <button class="btn btn-link collapsed " type="button " data-toggle="collapse " data-target="#collapseThree " aria-expanded="false " aria-controls="ID4 ">
+                        Analysis 4.- Percentage Tumor Volume vs. Treatment
+                      </button>
+                </h2>
+            </div>
+            <div id="collapseThree " class="collapse " aria-labelledby="ID4 " data-parent="#accordionExample ">
+                <div class="card-body ">
+                    <ul>
+                        <li>Capomulin and Ramicane have extraordinary response to the dose and prescrption against the tumors</li>
+                        <li>The sample was taken after 45 days of Treatment with significant results for those who are inherent for cancer</li>
+                        <div class="alert alert-info " role="alert ">
+                            Recommendation: I will apply benchmarking to get into further for the remaining Treatments to allign similarities and find improvings in methods and chemical compositions.
+                        </div>
+                        <img src="TUMOR45.png " alt="SurvCancer " class="description-image ">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer ">&copy; Copyright Ricardo Reynoso Bootcamp Trilogy/ITESM</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+</body>
+
+</html>
